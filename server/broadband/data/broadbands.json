@@ -1,0 +1,90 @@
+{
+  "broadbands": [
+    {
+      "name": "Broadband1",
+      "type": "bb",
+      "price": 40,
+      "bundles": [
+        {
+          "name": "Landline",
+          "plusPrice": -40
+        },
+        {
+          "name": "AddonBB",
+          "plusPrice": 0
+        }
+      ]
+    },
+    {
+      "name": "Landline",
+      "type": "II",
+      "price": 35,
+      "bundles": []
+    },
+    {
+      "name": "Broadband2",
+      "type": "bb",
+      "price": 60,
+      "bundles": [
+        {
+          "name": "TV1",
+          "plusPrice": -10
+        },
+        {
+          "name": "Landline",
+          "plusPrice": -40
+        },
+        {
+          "name": "TV2",
+          "plusPrice": -20
+        },
+        {
+          "name": "AddonBB",
+          "plusPrice": -10
+        }
+      ]
+    },
+    {
+      "name": "AddonBB",
+      "type": "addon",
+      "price": 10,
+      "bundles": []
+    },
+    {
+      "name": "TV1",
+      "type": "tv",
+      "price": 50,
+      "bundles": [
+        {
+          "name": "AddonTV",
+          "plusPrice": 35
+        },
+        {
+          "name": "Landline",
+          "plusPrice": -10
+        }
+      ]
+    },
+    {
+      "name": "TV2",
+      "type": "tv",
+      "price": 120,
+      "bundles": [
+        {
+          "name": "AddonTV",
+          "plusPrice": 15
+        },
+        {
+          "name": "Landline",
+          "plusPrice": -30
+        }
+      ]
+    },
+    {
+      "name": "AddonTV",
+      "type": "addon",
+      "price": 0,
+      "bundles": []
+    }
+  ]
+}
