@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
+import Header from './Header/Header';
 import ListBroadbandBundles from './listBroadbandBundles/ListBroadbandBundles';
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <div>
+            <Header />
             <Route exact path="/" component={ListBroadbandBundles} />
           </div>
         </BrowserRouter>
