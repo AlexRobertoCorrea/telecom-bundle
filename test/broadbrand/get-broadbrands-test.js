@@ -11,37 +11,37 @@ const broadbandServices = require(`${ROOT_PATH}/server/broadband/services`);
 
 const getBroadbandsExpected = () => (
   [{
-    name: ['Broadband1', 'Landline'],
+    name: 'Broadband1 + Landline',
     totalPrice: 35
   }, {
-    name: ['Broadband1', 'AddonBB'],
+    name: 'Broadband1 + AddonBB',
     totalPrice: 50
   }, {
-    name: ['Broadband2', 'TV1', 'Landline'],
+    name: 'Broadband2 + TV1 + Landline',
     totalPrice: 125
   }, {
-    name: ['Broadband2', 'AddonBB'],
+    name: 'Broadband2 + AddonBB',
     totalPrice: 60
   }, {
-    name: ['Broadband2', 'TV1'],
+    name: 'Broadband2 + TV1',
     totalPrice: 100
   }, {
-    name: ['Broadband2', 'TV2'],
+    name: 'Broadband2 + TV2',
     totalPrice: 160
   }, {
-    name: ['Broadband2', 'TV1', 'AddonTV'],
+    name: 'Broadband2 + TV1 + AddonTV',
     totalPrice: 135
   }, {
-    name: ['TV1', 'Landline'],
+    name: 'TV1 + Landline',
     totalPrice: 75
   }, {
-    name: ['TV1', 'AddonTV'],
+    name: 'TV1 + AddonTV',
     totalPrice: 85
   }, {
-    name: ['TV2', 'Landline'],
+    name: 'TV2 + Landline',
     totalPrice: 125
   }, {
-    name: ['TV2', 'AddonTV'],
+    name: 'TV2 + AddonTV',
     totalPrice: 135
   }, {
     name: 'Broadband1',

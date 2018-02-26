@@ -53,7 +53,8 @@ const getAllPaths = (broadbands, graph) => {
 const getBroadbandBundles = (allPaths, broadbands) => {
   /* The division by 2 is due to the fact that the algorithm calculates */
   /* the distance between round-trip nodes */
-  const broadbandBundles = allPaths.map(path => ({ name: path[0].path, totalPrice: path[0].cost / 2 }));
+  const broadbandBundles = allPaths.map(path =>
+    ({ name: path[0].path.join(' + '), totalPrice: path[0].cost / 2 }));
   
   broadbands.forEach((broadband) => {
     broadbandBundles.push({ name: broadband.name, totalPrice: broadband.price });

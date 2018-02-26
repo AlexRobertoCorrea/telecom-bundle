@@ -9,29 +9,20 @@ class ListBroadbandBundles extends Component {
     this.props.fetchBroadbandBundles();
   }
   
-  renderBroadbandBundles() {
-    if (this.props.broadbands) {
-      return this.props.broadbands.map(broadbandBundle => (
+  render() {
+    const { broadbands } = this.props;
+    return (
+      broadbands && broadbands.map((broadbandBundle, index) => (
         <BroadbandCard
+          key={index.toString()}
           name={broadbandBundle.name}
           totalPrice={broadbandBundle.totalPrice}
         />
-        )
-      );
-    }
-  }
-  
-  render() {
-    return (
-      <div>
-        {this.renderBroadbandBundles()}
-      </div>
+      ))
     );
   }
 }
 
-function mapStateToProps({ broadbands }) {
-  return { broadbands };
-}
+const mapStateToProps = ({ broadbands }) => ({ broadbands });
 
 export default connect(mapStateToProps, { fetchBroadbandBundles })(ListBroadbandBundles);
