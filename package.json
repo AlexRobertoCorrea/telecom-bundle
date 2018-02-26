@@ -16,7 +16,7 @@
     "client": "npm run start --prefix client",
     "watch-css": "npm run watch-css --prefix client",
     "mocha": "NODE_ENV=test ./node_modules/mocha/bin/mocha",
-    "lint": "eslint server/* test/**/* index.js client/src/*",
+    "lint": "eslint server/* test/**/* index.js client/src/**/*.js",
     "coverage": "NODE_ENV=test istanbul cover --print both _mocha -- -R spec",
     "test": "npm run lint && npm run coverage",
     "debug": "node --debug-brk index.js",
