@@ -5,3 +5,4 @@ coverage/
 client/yarn.lock
 client/build/
 client/etc/
+client/src/*.css

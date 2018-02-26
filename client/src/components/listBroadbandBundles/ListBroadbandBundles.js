@@ -15,6 +15,7 @@ class ListBroadbandBundles extends Component {
     return (
       broadbands && broadbands.map((broadbandBundle, index) => (
         <BroadbandCard
+          className="broadband-card-list"
           key={index.toString()}
           name={broadbandBundle.name}
           totalPrice={broadbandBundle.totalPrice}

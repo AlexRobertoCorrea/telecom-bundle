@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-  <div style={{ textAlign: 'center' }}>
+  <div className="header">
     <h1>
       Broadcast Bundles
     </h1>

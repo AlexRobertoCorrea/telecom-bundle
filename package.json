@@ -10,10 +10,11 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run watch-css\"",
     "production": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "webhook": "./sendgrid_webhook.sh",
     "client": "npm run start --prefix client",
+    "watch-css": "npm run watch-css --prefix client",
     "mocha": "NODE_ENV=test ./node_modules/mocha/bin/mocha",
     "lint": "eslint server/* test/**/* index.js client/src/*",
     "coverage": "NODE_ENV=test istanbul cover --print both _mocha -- -R spec",
