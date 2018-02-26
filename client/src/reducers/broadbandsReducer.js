@@ -1,4 +1,4 @@
-import { FETCH_BROADBAND_BUNDLES } from '../actions/types';
+import FETCH_BROADBAND_BUNDLES from '../actions/types';
 
 export default function(state = null, action) {
   switch (action.type) {

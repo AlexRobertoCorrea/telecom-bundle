@@ -15,7 +15,7 @@
     "webhook": "./sendgrid_webhook.sh",
     "client": "npm run start --prefix client",
     "mocha": "NODE_ENV=test ./node_modules/mocha/bin/mocha",
-    "lint": "eslint server/* test/**/* index.js",
+    "lint": "eslint server/* test/**/* index.js client/src/*",
     "coverage": "NODE_ENV=test istanbul cover --print both _mocha -- -R spec",
     "test": "npm run lint && npm run coverage",
     "debug": "node --debug-brk index.js",

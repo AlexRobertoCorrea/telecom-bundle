@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import BroadbandCard from '../broadbandCard/BroadbandCard';
-import { fetchBroadbandBundles } from '../../actions';
+import fetchBroadbandBundles from '../../actions';
 
 class ListBroadbandBundles extends Component {
   componentDidMount() {
@@ -24,5 +25,15 @@ class ListBroadbandBundles extends Component {
 }
 
 const mapStateToProps = ({ broadbands }) => ({ broadbands });
+
+ListBroadbandBundles.propTypes = {
+  broadbands: PropTypes.arrayOf(PropTypes.object),
+  fetchBroadbandBundles: PropTypes.func
+};
+
+ListBroadbandBundles.defaultProps = {
+  broadbands: [],
+  fetchBroadbandBundles: undefined
+};
 
 export default connect(mapStateToProps, { fetchBroadbandBundles })(ListBroadbandBundles);
